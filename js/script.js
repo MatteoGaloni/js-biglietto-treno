@@ -10,16 +10,17 @@ console.log("L'età del passggero è", etaPasseggero);
 let prezzoBiglietto = parseInt(numeroKm) * 0.21;
 let sconto20percento = prezzoBiglietto - (prezzoBiglietto * 20 / 100);
 let sconto40percento = prezzoBiglietto - (prezzoBiglietto * 40 / 100);
+let euro = "€"
 
 // ***Condizione***
 
 if (parseInt(etaPasseggero) < 18) {
-    alert("il prezzo del biglietto è di " + sconto20percento);
+    alert("il prezzo del biglietto è di " + sconto20percento.toFixed(2) + euro);
 } else if (parseInt(etaPasseggero) > 65) {
-    alert("il prezzo del biglietto è di " + sconto40percento);
+    alert("il prezzo del biglietto è di " + sconto40percento.toFixed(2) + euro);
 } else {
-    alert("il prezzo del biglietto è di " + prezzoBiglietto);
+    alert("il prezzo del biglietto è di " + prezzoBiglietto.toFixed(2) + euro);
 }
-    
+
 
 
