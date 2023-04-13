@@ -7,8 +7,10 @@ console.log("L'età del passggero è", etaPasseggero);
 
 // ***Dichiaro la variabile prezzoBiglietto ***
 
-let prezzoBiglietto = console.log(parseInt(numeroKm) * 0.21);
+let prezzoBiglietto = parseInt(numeroKm) * 0.21;
 
 if (parseInt(etaPasseggero) < 18) {
-    console.log("il prezzo del biglietto è di", prezzoBiglietto);
-}
+    alert("il prezzo del biglietto è di", prezzoBiglietto);
+
+// if else (parseInt(etaPasseggero) > 65)
+
